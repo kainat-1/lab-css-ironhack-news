@@ -195,7 +195,7 @@ header {
     width: 100%;
   
   }
-  .main-artical .content{
+  .main-articel .content{
     width: 100%;
   }
   .image{
@@ -223,9 +223,24 @@ header {
       flex-wrap: wrap;
     }
      .article{
-      flex: 1 1 48%;
+      flex: 1 0 48%;
      }
       
+    }
+    @media (max-width:479px) {
+       
+       .navbar{
+        display: flex;
+        flex-direction: column;
+      }
+      li{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+      }
+      .menu-icon{
+         display: block;
+      }
     }
 
    
